@@ -1,0 +1,132 @@
+.fevorite {
+	position: absolute;
+	cursor: pointer;
+
+	&:hover {
+	}
+}
+
+.column {
+	display: flex;
+	flex: 0 1 20%;
+	flex-wrap: wrap;
+	background: #ffffff;
+	border: 1px solid #f3f3f3;
+	border-radius: 40px;
+	margin: 15px;
+	padding: 22px 22px 35px 22px;
+	transition: 0.2s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		border: 1px solid #f8f8f8;
+		box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+		transform: translateY(-5px);
+	}
+}
+.item {
+	display: flex;
+	flex-direction: column;
+}
+
+.img {
+	max-width: 133px;
+	margin-bottom: 14px;
+	align-self: center;
+}
+.text {
+	margin-bottom: 14px;
+	// max-width: 150px;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: calc(17 / 14 * 100%);
+}
+.items {
+	display: flex;
+	justify-content: space-between;
+}
+.price {
+	display: flex;
+	flex-direction: column;
+	span {
+		font-weight: 500;
+		font-size: 13px;
+		line-height: calc(13 / 13 * 100%);
+		text-transform: uppercase;
+		opacity: 0.5;
+		color: #bdbdbd;
+		margin-bottom: 2px;
+	}
+	b {
+		font-size: 14px;
+		line-height: calc(17 / 14 * 100%);
+	}
+}
+.btn {
+	align-self: center;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background: #ffffff;
+	border: 1px solid #dfdfdf;
+	box-sizing: border-box;
+	border-radius: 8px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+.btn:hover {
+	opacity: 1;
+}
+.btn::after {
+	content: "";
+	position: absolute;
+	top: 14.5px;
+	left: 10px;
+	height: 1px;
+	width: 10px;
+	background: #d3d3d3;
+}
+
+.btn::before {
+	content: "";
+	position: absolute;
+	top: 14.5px;
+	left: 10px;
+	height: 1px;
+	width: 10px;
+	background: #d3d3d3;
+	transform: rotate(90deg);
+}
+.btnActive {
+	align-self: center;
+	position: relative;
+	width: 32px;
+	height: 32px;
+	background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+
+	border: 1px solid #dfdfdf;
+	box-sizing: border-box;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.btnActive {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 16.5px;
+		left: 9px;
+		height: 2px;
+		width: 7px;
+		transform: rotate(45deg);
+		background: #ffffff;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: center;
+		left: 12px;
+		height: 2px;
+		width: 12px;
+		transform: rotate(-45deg);
+		background: #ffffff;
+	}
+}
