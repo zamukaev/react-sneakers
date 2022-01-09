@@ -124,6 +124,7 @@ function App() {
 				setCartOpen,
 				setCartItems
 			}} >
+
 				<Header cartOpen={() => setCartOpen(true)} />
 				<Cart opened={cartOpen} cartClose={() => setCartOpen(false)} removeItem={onRemoveItem} />
 				<Routes>

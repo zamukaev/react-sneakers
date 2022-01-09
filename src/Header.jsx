@@ -6,6 +6,11 @@ function Header(props) {
 
 	return (
 		<header className="header">
+			<div className='item-block'>
+				<div className="item-block__cart" onClick={props.cartOpen}><img src="img/cart.svg" alt="cart" /></div>
+				<div className="item-block__favorits"><Link to="/favorites"><img src="img/heartF.svg" alt="heartF" /></Link></div>
+				<div className="item-block__user"><Link to="/order"><img src="img/user.svg" alt="user" /></Link></div>
+			</div>
 
 			<Link to="/" className="header__left">
 				<img className="header__logo" src="img/logo.png" alt="" />
